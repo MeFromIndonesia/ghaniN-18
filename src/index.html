@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticketing App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script/main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body style="background-image: url('assets/images/background.jpg')">
+    <nav
+      class="sticky top-0 h-14 flex justify-center items-center z-50 text-white"
+    >
+      <div class="container flex justify-between items-center h-full">
+        <a
+          href="/"
+          class="text-2xl font-semibold transition-[opacity,_transform] hover:opacity-80 active:scale-[.98]"
+        >
+          <span class="text-primary-400">Ticket</span>an
+        </a>
+        <div class="flex items-center h-full space-x-1">
+          <a href="#" class="navbarItem">Home</a>
+          <a href="#menu" class="navbarItem">Menu</a>
+          <a href="#about" class="navbarItem">About</a>
+          <a href="#contact" class="navbarItem">Contact</a>
+        </div>
+      </div>
+      <div
+        class="absolute top-0 left-0 size-full -z-10 bg-zinc-800/50 backdrop-blur-lg"
+        style="opacity: 0"
+        id="navbarBg"
+      ></div>
+    </nav>
+
+    <main>
+      <header
+        class="h-[calc(100vh_-_3.5rem)] flex justify-center items-center text-white"
+      >
+        <div class="flex flex-col space-y-2 items-center">
+          <h1 class="text-8xl font-bold drop-shadow-2xl">
+            Welcome to <span class="text-primary-400">Ticket</span>an
+          </h1>
+          <p class="text-3xl font-medium">Your ticket booking platform</p>
+        </div>
+      </header>
+      <section
+        class="bg-gradient-to-b from-zinc-300/85 to-zinc-200 max-h-[calc(100vh_+_7rem)] backdrop-blur-3xl [mask-image:_linear-gradient(rgb(0_0_0_/_0)_0%,_rgb(0_0_0_/_1)_10rem)] pt-28 space-y-9"
+      >
+        <div id="menu" class="container pt-28">
+          <h3 class="text-3xl font-semibold">
+            Check out what's popular on Ticketan!
+          </h3>
+        </div>
+        <div class="container flex gap-5 justify-center">
+          <div
+            class="flex-shrink-0 w-64 h-auto bg-zinc-300 shadow-2xl rounded-lg overflow-hidden flex flex-col"
+          >
+            <img
+              src="assets/images/item-image_1.jpg"
+              alt="Preview image"
+              class="h-full object-cover pointer-events-none"
+            />
+            <div
+              class="flex flex-col justify-center items-center w-full py-3 px-1.5"
+            >
+              <a
+                href="#"
+                class="text-xl font-semibold line-clamp-1 h-[1lh] transition-colors hover:text-primary-600"
+              >
+                Houses of Parliament
+              </a>
+              <h3 class="text-lg font-medium mb-1">Great Britain</h3>
+              <p class="text-zinc-600 line-clamp-2 text-center h-[2lh] mb-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="flex justify-center items-center space-x-1">
+                <i class="fa-solid fa-star text-zinc-700"></i>
+                <i class="fa-solid fa-star text-zinc-700"></i>
+                <i class="fa-solid fa-star text-zinc-700"></i>
+                <i class="fa-regular fa-star text-zinc-700"></i>
+                <i class="fa-regular fa-star text-zinc-700"></i>
+              </div>
+              <a
+                href="#"
+                class="inline-flex mt-3 w-fit py-1.5 px-3 text-white bg-primary-600 rounded-md transition hover:bg-primary-600/80 active:scale-[.98]"
+              >
+                Book Now
+              </a>
+            </div>
+          </div>
+          <div
+            class="flex-shrink-0 w-64 h-auto bg-zinc-300 shadow-2xl rounded-lg overflow-hidden flex flex-col"
+          >
+            <img
+              src="assets/images/item-image_3.jpg"
+              alt="Preview image"
+              class="h-full object-cover pointer-events-none"
+            />
+            <div
+              class="flex flex-col justify-center items-center w-full py-3 px-1.5"
+            >
+              <a
+                href="#"
+                class="text-xl font-semibold line-clamp-1 h-[1lh] transition-colors hover:text-primary-600"
+              >
+                yamanashi Prefecture
+              </a>
+              <h3 class="text-lg font-medium mb-1">Japan</h3>
+              <p class="text-zinc-600 line-clamp-2 text-center h-[2lh] mb-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </p>
+              <div class="flex justify-center items-center space-x-1">
+                <i class="fa-solid fa-star text-zinc-700"></i>
+                <i class="fa-solid fa-star text-zinc-700"></i>
+                <i class="fa-solid fa-star text-zinc-700"></i>
+                <i class="fa-solid fa-star text-zinc-700"></i>
+                <i class="fa-regular fa-star text-zinc-700"></i>
+              </div>
+              <a
+                href="#"
+                class="inline-flex mt-3 w-fit py-1.5 px-3 text-white bg-primary-600 rounded-md transition hover:bg-primary-600/80 active:scale-[.98]"
+              >
+                Book Now
+              </a>
+            </div>
+          </div>
+          <div
+            class="flex-shrink-0 w-64 h-auto bg-zinc-300 shadow-2xl rounded-lg overflow-hidden flex flex-col"
+          >
+            <img
+              src="assets/images/item-image_4.jpg"
+              alt="Preview image"
+              class="h-full object-cover pointer-events-none"
+            />
+            <div
+              class="flex flex-col justify-center items-center w-full py-3 px-1.5"
+            >
+              <a
+                href="#"
+                class="text-xl font-semibold line-clamp-1 h-[1lh] transition-colors hover:text-primary-600"
+              >
+                Lake Hallstatt
+              </a>
+              <h3 class="text-lg font-medium mb-1">Austria</h3>
+              <p class="text-zinc-600 line-clamp-2 text-center h-[2lh] mb-1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolores!
+              </p>
+              <div class="flex justify-center items-center space-x-1">
+                <i class="fa-solid fa-star text-zinc-700"></i>
+                <i class="fa-solid fa-star text-zinc-700"></i>
+                <i class="fa-solid fa-star text-zinc-700"></i>
+                <i class="fa-solid fa-star text-zinc-700"></i>
+                <i class="fa-regular fa-star text-zinc-700"></i>
+              </div>
+              <a
+                href="#"
+                class="inline-flex mt-3 w-fit py-1.5 px-3 text-white bg-primary-600 rounded-md transition hover:bg-primary-600/80 active:scale-[.98]"
+              >
+                Book Now
+              </a>
+            </div>
+          </div>
+          <div
+            class="flex-shrink-0 w-64 h-auto bg-zinc-300 shadow-2xl rounded-lg overflow-hidden flex flex-col"
+          >
+            <img
+              src="assets/images/item-image_5.jpg"
+              alt="Preview image"
+              class="h-full object-cover pointer-events-none"
+            />
+            <div
+              class="flex flex-col justify-center items-center w-full py-3 px-1.5"
+            >
+              <a
+                href="#"
+                class="text-xl font-semibold line-clamp-1 h-[1lh] transition-colors hover:text-primary-600"
+              >
+                Eiffel Tower
+              </a>
+              <h3 class="text-lg font-medium mb-1">Great Britain</h3>
+              <p class="text-zinc-600 line-clamp-2 text-center h-[2lh] mb-1">
+                Lorem ipsum dolor sit amet consectetur.
+              </p>
+              <div class="flex justify-center items-center space-x-1">
+                <i class="fa-solid fa-star text-zinc-700"></i>
+                <i class="fa-solid fa-star text-zinc-700"></i>
+                <i class="fa-solid fa-star text-zinc-700"></i>
+                <i class="fa-regular fa-star text-zinc-700"></i>
+                <i class="fa-regular fa-star text-zinc-700"></i>
+              </div>
+              <a
+                href="#"
+                class="inline-flex mt-3 w-fit py-1.5 px-3 text-white bg-primary-600 rounded-md transition hover:bg-primary-600/80 active:scale-[.98]"
+              >
+                Book Now
+              </a>
+            </div>
+          </div>
+          <div
+            class="flex-shrink-0 w-64 h-auto bg-zinc-300 shadow-2xl rounded-lg overflow-hidden flex flex-col"
+          >
+            <img
+              src="assets/images/item-image_6.jpg"
+              alt="Preview image"
+              class="h-full object-cover pointer-events-none"
+            />
+            <div
+              class="flex flex-col justify-center items-center w-full py-3 px-1.5"
+            >
+              <a
+                href="#"
+                class="text-xl font-semibold line-clamp-1 h-[1lh] transition-colors hover:text-primary-600"
+              >
+                Burj Khalifa
+              </a>
+              <h3 class="text-lg font-medium mb-1">United Arab Emirates</h3>
+              <p class="text-zinc-600 line-clamp-2 text-center h-[2lh] mb-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="flex justify-center items-center space-x-1">
+                <i class="fa-solid fa-star text-zinc-700"></i>
+                <i class="fa-solid fa-star text-zinc-700"></i>
+                <i class="fa-solid fa-star text-zinc-700"></i>
+                <i class="fa-regular fa-star text-zinc-700"></i>
+                <i class="fa-regular fa-star text-zinc-700"></i>
+              </div>
+              <a
+                href="#"
+                class="inline-flex mt-3 w-fit py-1.5 px-3 text-white bg-primary-600 rounded-md transition hover:bg-primary-600/80 active:scale-[.98]"
+              >
+                Book Now
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center py-4">
+          <button
+            class="text-primary-500 px-6 py-2 rounded-md text-lg font-medium bg-primary-50 transition hover:bg-primary-50/80 active:scale-[.98]"
+          >
+            See More
+          </button>
+        </div>
+      </section>
+      <section class="bg-zinc-200 max-h-screen py-24">
+        <div
+          class="container flex justify-between items-center space-x-12 h-full"
+        >
+          <div class="flex flex-col justify-center items-start space-y-3">
+            <h3 class="text-3xl font-semibold">Noteworthy Vacation Ideas</h3>
+            <button
+              class="text-primary-500 px-6 py-2 rounded-md text-lg font-medium bg-primary-50 transition hover:bg-primary-50/80 active:scale-[.98]"
+            >
+              See All
+            </button>
+          </div>
+          <div
+            class="w-4/6 relative before:absolute before:left-0 before:top-0 before:bg-gradient-to-r before:from-zinc-200 before:to-transparent before:w-1/5 before:h-full before:transition-opacity before:duration-300 before:hover:opacity-0 before:pointer-events-none before:z-10 after:absolute after:right-0 after:top-0 after:bg-gradient-to-l after:from-zinc-200 after:to-transparent after:w-1/5 after:h-full after:transition-opacity after:duration-300 after:hover:opacity-0 after:pointer-events-none after:z-10"
+          >
+            <div
+              class="p-3 flex items-center gap-4 overflow-x-hidden snap-mandatory snap-x"
+              id="carousel"
+            >
+              <a
+                href="#"
+                class="snap-center inline-block flex-shrink-0 relative h-56 aspect-video shadow-xl rounded-lg overflow-hidden group transition-transform active:scale-[.98] z-0"
+              >
+                <img
+                  src="assets/images/item-image_2.jpg"
+                  alt="Preview image"
+                  class="absolute pointer-events-none size-full -z-[2] transition-[filter,_transform] duration-500 group-hover:blur group-hover:scale-110"
+                />
+                <div
+                  class="absolute left-0 top-0 -z-[1] bg-gradient-to-r from-zinc-200/90 from-20% to-transparent size-full -translate-x-full transition-transform duration-500 group-hover:translate-x-0 pointer-events-none"
+                ></div>
+                <div
+                  class="size-full p-3 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                >
+                  <h3 class="text-2xl font-semibold">Colosseum Amphitheatre</h3>
+                  <p
+                    class="text-lg font-medium max-w-[90%] text-pretty line-clamp-3 mb-2.5"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolore iste error expedita consequuntur, eius,
+                    necessitatibus numquam qui quae sapiente nobis rerum?
+                  </p>
+                  <div class="flex items-center space-x-1">
+                    <i class="fa-solid fa-star text-zinc-700"></i>
+                    <i class="fa-solid fa-star text-zinc-700"></i>
+                    <i class="fa-solid fa-star text-zinc-700"></i>
+                    <i class="fa-solid fa-star text-zinc-700"></i>
+                    <i class="fa-regular fa-star text-zinc-700"></i>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="snap-center inline-block flex-shrink-0 relative h-56 aspect-video shadow-xl rounded-lg overflow-hidden group transition-transform active:scale-[.98] z-0"
+              >
+                <img
+                  src="assets/images/item-image_7.jpg"
+                  alt="Preview image"
+                  class="absolute pointer-events-none size-full -z-[2] transition-[filter,_transform] duration-500 group-hover:blur group-hover:scale-110"
+                />
+                <div
+                  class="absolute left-0 top-0 -z-[1] bg-gradient-to-r from-zinc-200/90 from-20% to-transparent size-full -translate-x-full transition-transform duration-500 group-hover:translate-x-0 pointer-events-none"
+                ></div>
+                <div
+                  class="size-full p-3 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                >
+                  <h3 class="text-2xl font-semibold">Great Wall of China</h3>
+                  <p
+                    class="text-lg font-medium max-w-[90%] text-pretty line-clamp-3 mb-2.5"
+                  >
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis magnam veritatis fugit commodi cupiditate.
+                  </p>
+                  <div class="flex items-center space-x-1">
+                    <i class="fa-solid fa-star text-zinc-700"></i>
+                    <i class="fa-solid fa-star text-zinc-700"></i>
+                    <i class="fa-solid fa-star text-zinc-700"></i>
+                    <i class="fa-regular fa-star text-zinc-700"></i>
+                    <i class="fa-regular fa-star text-zinc-700"></i>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="snap-center inline-block flex-shrink-0 relative h-56 aspect-video shadow-xl rounded-lg overflow-hidden group transition-transform active:scale-[.98] z-0"
+              >
+                <img
+                  src="assets/images/item-image_8.jpg"
+                  alt="Preview image"
+                  class="absolute pointer-events-none size-full -z-[2] transition-[filter,_transform] duration-500 group-hover:blur group-hover:scale-110"
+                />
+                <div
+                  class="absolute left-0 top-0 -z-[1] bg-gradient-to-r from-zinc-200/90 from-20% to-transparent size-full -translate-x-full transition-transform duration-500 group-hover:translate-x-0 pointer-events-none"
+                ></div>
+                <div
+                  class="size-full p-3 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                >
+                  <h3 class="text-2xl font-semibold">Taj Mahal</h3>
+                  <p
+                    class="text-lg font-medium max-w-[90%] text-pretty line-clamp-3 mb-2.5"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo, qui quis? Itaque perferendis maxime aliquam, nam
+                    deleniti corporis?
+                  </p>
+                  <div class="flex items-center space-x-1">
+                    <i class="fa-solid fa-star text-zinc-700"></i>
+                    <i class="fa-solid fa-star text-zinc-700"></i>
+                    <i class="fa-solid fa-star text-zinc-700"></i>
+                    <i class="fa-regular fa-star text-zinc-700"></i>
+                    <i class="fa-regular fa-star text-zinc-700"></i>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="snap-center inline-block flex-shrink-0 relative h-56 aspect-video shadow-xl rounded-lg overflow-hidden group transition-transform active:scale-[.98] z-0"
+              >
+                <img
+                  src="assets/images/item-image_9.jpg"
+                  alt="Preview image"
+                  class="absolute pointer-events-none size-full -z-[2] transition-[filter,_transform] duration-500 group-hover:blur group-hover:scale-110"
+                />
+                <div
+                  class="absolute left-0 top-0 -z-[1] bg-gradient-to-r from-zinc-200/90 from-20% to-transparent size-full -translate-x-full transition-transform duration-500 group-hover:translate-x-0 pointer-events-none"
+                ></div>
+                <div
+                  class="size-full p-3 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                >
+                  <h3 class="text-2xl font-semibold">Borobudur Temple</h3>
+                  <p
+                    class="text-lg font-medium max-w-[90%] text-pretty line-clamp-3 mb-2.5"
+                  >
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quod enim corrupti dignissimos provident quam. Sapiente
+                    illum quia voluptatibus quasi.
+                  </p>
+                  <div class="flex items-center space-x-1">
+                    <i class="fa-solid fa-star text-zinc-700"></i>
+                    <i class="fa-solid fa-star text-zinc-700"></i>
+                    <i class="fa-solid fa-star text-zinc-700"></i>
+                    <i class="fa-regular fa-star text-zinc-700"></i>
+                    <i class="fa-regular fa-star text-zinc-700"></i>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="snap-center inline-block flex-shrink-0 relative h-56 aspect-video shadow-xl rounded-lg overflow-hidden group transition-transform active:scale-[.98] z-0"
+              >
+                <img
+                  src="assets/images/item-image_10.jpg"
+                  alt="Preview image"
+                  class="absolute pointer-events-none size-full -z-[2] transition-[filter,_transform] duration-500 group-hover:blur group-hover:scale-110"
+                />
+                <div
+                  class="absolute left-0 top-0 -z-[1] bg-gradient-to-r from-zinc-200/90 from-20% to-transparent size-full -translate-x-full transition-transform duration-500 group-hover:translate-x-0 pointer-events-none"
+                ></div>
+                <div
+                  class="size-full p-3 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                >
+                  <h3 class="text-2xl font-semibold">Brandenburg Gate</h3>
+                  <p
+                    class="text-lg font-medium max-w-[90%] text-pretty line-clamp-3 mb-2.5"
+                  >
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Officiis magnam, voluptatem eos impedit ex dolor obcaecati!
+                  </p>
+                  <div class="flex items-center space-x-1">
+                    <i class="fa-solid fa-star text-zinc-700"></i>
+                    <i class="fa-solid fa-star text-zinc-700"></i>
+                    <i class="fa-solid fa-star text-zinc-700"></i>
+                    <i class="fa-regular fa-star text-zinc-700"></i>
+                    <i class="fa-regular fa-star text-zinc-700"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="flex justify-center items-center gap-3">
+              <button
+                class="inline-flex size-8 rounded-full border-2 border-zinc-700 justify-center items-center transition hover:bg-zinc-700 hover:text-white active:scale-[.98]"
+                id="prev"
+              >
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button
+                class="inline-flex size-8 rounded-full border-2 border-zinc-700 justify-center items-center transition hover:bg-zinc-700 hover:text-white active:scale-[.98]"
+                id="next"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-zinc-200 max-h-screen py-24">
+        <div
+          class="container flex flex-col justify-center items-start space-y-10"
+        >
+          <h3 class="text-3xl font-semibold">Trip to Your Favorite Country</h3>
+          <div class="w-full flex justify-between items-center">
+            <a
+              href="#"
+              class="flex-shrink-0 relative aspect-square size-72 shadow-xl rounded-xl overflow-hidden group transition-transform active:scale-[.98]"
+            >
+              <img
+                src="assets/images/country-image_1.jpg"
+                alt="Country image"
+                class="object-cover size-full -z-[1] transition-[transform,_filter] duration-500 group-hover:scale-110 group-hover:grayscale-[80%]"
+              />
+              <div class="p-4">
+                <h2
+                  class="text-4xl font-semibold absolute bottom-0 left-0 w-full text-center py-5 text-white bg-gradient-to-b from-transparent to-black drop-shadow-2xl"
+                >
+                  Singapore
+                </h2>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="flex-shrink-0 relative aspect-square size-72 shadow-xl rounded-xl overflow-hidden group transition-transform active:scale-[.98]"
+            >
+              <img
+                src="assets/images/country-image_2.jpg"
+                alt="Country image"
+                class="object-cover size-full -z-[1] transition-[transform,_filter] duration-500 group-hover:scale-110 group-hover:grayscale-[80%]"
+              />
+              <div class="p-4">
+                <h2
+                  class="text-4xl font-semibold absolute bottom-0 left-0 w-full text-center py-5 text-white bg-gradient-to-b from-transparent to-black drop-shadow-2xl"
+                >
+                  Australia
+                </h2>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="flex-shrink-0 relative aspect-square size-72 shadow-xl rounded-xl overflow-hidden group transition-transform active:scale-[.98]"
+            >
+              <img
+                src="assets/images/country-image_3.jpg"
+                alt="Country image"
+                class="object-cover size-full -z-[1] transition-[transform,_filter] duration-500 group-hover:scale-110 group-hover:grayscale-[80%]"
+              />
+              <div class="p-4">
+                <h2
+                  class="text-4xl font-semibold absolute bottom-0 left-0 w-full text-center py-5 text-white bg-gradient-to-b from-transparent to-black drop-shadow-2xl"
+                >
+                  South Korea
+                </h2>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="flex-shrink-0 relative aspect-square size-72 shadow-xl rounded-xl overflow-hidden group transition-transform active:scale-[.98]"
+            >
+              <img
+                src="assets/images/country-image_4.jpg"
+                alt="Country image"
+                class="object-cover size-full -z-[1] transition-[transform,_filter] duration-500 group-hover:scale-110 group-hover:grayscale-[80%]"
+              />
+              <div class="p-4">
+                <h2
+                  class="text-4xl font-semibold absolute bottom-0 left-0 w-full text-center py-5 text-white bg-gradient-to-b from-transparent to-black drop-shadow-2xl"
+                >
+                  Vietnam
+                </h2>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="bg-zinc-200 max-h-screen py-24" id="about">
+        <div
+          class="container flex flex-col justify-center items-start space-y-12"
+        >
+          <h3 class="text-3xl font-semibold">About Ticketan</h3>
+          <div class="w-full flex justify-between items-center gap-32">
+            <img
+              src="assets/images/about-image.jpg"
+              alt="About Ticketan"
+              class="aspect-[3_/_4] bg-zinc-300/70 w-96 flex-shrink-0 rounded-xl object-cover shadow-2xl"
+            />
+            <div class="content-center">
+              <h4 class="text-2xl font-medium mb-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </h4>
+              <h5 class="text-lg font-medium">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
+                eveniet fuga!
+              </h5>
+              <p class="mb-5">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+                corporis, quod, rerum assumenda minus nisi veniam delectus
+                perspiciatis earum expedita magnam, illum commodi doloribus.
+                Quia consequuntur eveniet molestias, expedita voluptas, delectus
+                quos repudiandae quaerat perferendis et voluptatibus nisi,
+                libero inventore!
+              </p>
+              <h5 class="text-lg font-medium">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                corporis.
+              </h5>
+              <p class="mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                nulla repellendus, error ex deleniti quidem excepturi dolorem
+                laborum commodi? Corporis repellendus obcaecati autem eius velit
+                iusto et blanditiis, asperiores, molestiae fuga impedit
+                repudiandae eum. Cupiditate non ducimus perferendis explicabo
+                atque. Ipsa sit non recusandae!
+              </p>
+              <h5 class="text-lg font-medium">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis
+                nisi veniam atque.
+              </h5>
+              <p class="mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                rerum quas ipsam, consequuntur corrupti beatae quam maiores sit
+                nulla odio nihil earum repellendus tempora, adipisci voluptates!
+                Repellendus cum nesciunt magnam blanditiis dolorem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-zinc-800 max-h-screen py-24 text-white" id="contact">
+        <div class="container flex justify-between items-center">
+          <div class="flex flex-col gap-2">
+            <h3 class="text-3xl font-semibold mb-12">Contact Us</h3>
+            <div class="flex flex-col gap-6">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="border-2 border-zinc-700 bg-zinc-50 rounded-md p-2.5 w-full outline-none text-black transition hover:bg-zinc-200 focus:bg-zinc-50 focus-within:border-primary-500 placeholder:text-zinc-700"
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="border-2 border-zinc-700 bg-zinc-50 rounded-md p-2.5 w-full outline-none text-black transition hover:bg-zinc-200 focus:bg-zinc-50 focus-within:border-primary-500 placeholder:text-zinc-700"
+              />
+              <textarea
+                placeholder="Your Message"
+                class="h-32 border-2 border-zinc-700 bg-zinc-50 rounded-md p-2.5 w-full outline-none text-black transition hover:bg-zinc-200 focus:bg-zinc-50 focus-within:border-primary-500 placeholder:text-zinc-700"
+              ></textarea>
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="subscribe-checkbox"
+                  class="w-4 h-4 accent-primary-500 bg-gray-100 border-gray-300 rounded outline-none ring-0 ring-primary-500 ring-offset-0 ring-offset-zinc-800 transition-shadow focus:ring-2 focus:ring-offset-1"
+                />
+                <label
+                  class="block text-sm font-medium ml-1.5"
+                  for="subscribe-checkbox"
+                >
+                  Subscribe to our newsletter
+                </label>
+              </div>
+              <button
+                type="submit"
+                class="inline-flex justify-center items-center bg-zinc-600 text-white rounded-md p-4 w-full transition hover:bg-zinc-700 active:scale-[.98]"
+              >
+                Send Message
+              </button>
+              <p class="text-sm">
+                We'll keep you informed about our latest deals and promotions.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center space-y-4 max-w-xl">
+            <h3 class="text-3xl font-semibold mb-12">Contact Information</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+              incidunt optio, commodi delectus rerum modi quod maxime facilis
+              voluptas, est veniam aut aliquid eligendi inventore sed ipsa nisi
+              sit repellat dicta illum hic quaerat quasi labore? Molestias
+              laborum voluptates consequatur excepturi aspernatur neque,
+              accusamus sapiente culpa eum.
+            </p>
+            <div class="flex flex-col gap-2">
+              <p>
+                <i class="fa-solid fa-home mr-2"></i>
+                <span class="font-semibold">Address:</span>
+                <span>Yosowilangun Lor, Lumajang Regency, East Java</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-phone mr-2"></i>
+                <span class="font-semibold">Phone:</span>
+                <span>+62 812-3456-7890</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope mr-2"></i>
+                <span class="font-semibold">Email:</span>
+                <span>info@ticketan.com</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-clock mr-2"></i>
+                <span class="font-semibold">Opening Hours:</span>
+                <span>Monday - Friday: 9 AM - 7 PM</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="bg-zinc-950 py-6 text-center text-white">
+        <div class="container max-w-7xl mx-auto">
+          <p>&copy; 2024 Ticketan. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <button
+      class="fixed bottom-5 right-5 size-11 hidden justify-center items-center rounded-full bg-zinc-900 z-50 transition hover:bg-zinc-600 active:scale-[.98]"
+      id="scroll-up"
+    >
+      <i class="fa-solid fa-chevron-up text-white text-lg"></i>
+    </button>
+  </body>
+</html>
